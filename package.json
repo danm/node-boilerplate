@@ -1,0 +1,38 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Set of opinions for starting new NodeJS Projects",
+  "main": "./lib/index.js",
+  "scripts": {
+    "watch": "nodemon --exec npm run lintTestServer",
+    "build": "npm run lint && npm run test && npm run transpile",
+    "lintTestServer": "npm run lint && npm run test && npm run server",
+    "lint": "./node_modules/eslint/bin/eslint.js src/**",
+    "test": "echo \"add a test framework\"",
+    "server": "node ./src/index.js",
+    "transpile": "./node_modules/babel-cli/bin/babel.js src --out-dir lib --copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danm/node-boilerplate.git"
+  },
+  "author": "Daniel Morrison <daniel.morrison@bbc.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danm/node-boilerplate/issues"
+  },
+  "homepage": "https://github.com/danm/node-boilerplate#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.12.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.5.1",
+    "nodemon": "^1.12.1",
+    "prettier": "^1.8.2"
+  }
+}

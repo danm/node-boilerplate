@@ -1,0 +1,13 @@
+{
+  // prevents other formatters running on save
+  "editor.formatOnSave": false,
+  // run prettier on save when editing a javascript file
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  // prevents default VS Code JS linting
+  "javascript.format.enable": false,
+  
+  // tells prettier to run eslint --fix after runnning
+  "prettier.eslintIntegration": true
+}
